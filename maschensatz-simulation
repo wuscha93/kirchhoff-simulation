@@ -1,5 +1,3 @@
-Der Grund für dieses Verhalten liegt in einer Kleinigkeit beim Auslesen der Werte im Modalfenster. In der Funktion syncModalInput() wurde der aus dem Eingabefeld ausgelesene Wert zwar in das input-Feld geschrieben, aber nicht in das Array/Objekt values[activeEditKey] übernommen. Dadurch blieb der alte Wert gespeichert und die Anzeige hat sich nicht aktualisiert.
-Hier ist der korrigierte Code. Die Anpassung befindet sich in der JavaScript-Funktion syncModalInput() (Zeile 312):
 <!DOCTYPE html>
 <html lang="de">
 <head>
